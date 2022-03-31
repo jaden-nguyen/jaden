@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jaden's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="action.js"> </script>
+    </head>
+
+    <header>
+        
+    </header>
+
+
+    <body>
+        <section class="showcase">
+            <header>
+                <h2 class="logo">Portfolio</h2>
+                <div class="toggle"></div>
+            </header>
+
+            <video src="video.mp4" muted loop autoplay></video> 
+
+            <div class="overlay"></div>
+
+            <div class="text">
+                <h2>Hello, I'm <span style="color:rgba(232, 62, 70, 0.71)">Jaden Nguyen</span>.</h2> 
+                <h3>Welcome to my page.</h3>
+                <a href="#">View my work</a>
+            </div>
+            
+            <ul class="social">
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/jaden-nguyen-seattle/"><img src="linkedin1.png" alt="" /></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/jaden-nguyen"><img src="github.png" alt="" /></a>
+                </li>
+            </ul> 
+
+        </section>
+
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <script>
+            const menuToggle = document.querySelector('.toggle');
+            const showcase = document.querySelector('.showcase');
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            }) 
+        </script>
+
+    </body>
+</html>
